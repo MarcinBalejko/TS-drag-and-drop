@@ -1,5 +1,10 @@
 // Component Base Class
-export abstract class Component<T extends HTMLElement, U extends HTMLElement> {
+
+// 'default' suggests that this is the main export of this file, we can have only one export default per file
+export default abstract class Component<
+  T extends HTMLElement,
+  U extends HTMLElement
+> {
   templateElement: HTMLTemplateElement;
   hostElement: T;
   element: U;
